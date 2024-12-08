@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #f6ebe1;
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -62,23 +61,25 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f6ebe1;
+  border-radius: 50px;
+  height: 70px;
 }
 
 .logo img {
-  height: 30px;
+  height: 20px;
   width: auto;
+  padding-left: 30px;
 }
 
 .nav-links {
   display: flex;
-  align-items: baseline;
-  gap: 40px;
+  margin-right: 20px;
 }
 
-.nav-links ul {
+.nav-links li {
   display: flex;
   list-style: none;
-  gap: 30px;
 }
 
 .nav-links a {
@@ -89,7 +90,7 @@ nav {
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   overflow: hidden;
 }
@@ -141,14 +142,15 @@ nav {
 }
 
 .cta-button {
-  display: inline-block;
+  display: inline-flex;
   padding: 12px 30px;
   background-color: #181818;
   color: #f6ebe1;
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
-  margin-top: 20px;
+  width: fit-content;
+  white-space: nowrap;
 }
 
 .cta-button:hover {
@@ -156,7 +158,6 @@ nav {
   color: #181818;
 }
 
-/* Optional: animate the arrow on hover */
 .cta-button:hover .arrow {
   transform: translateX(4px);
   color: #181818;
@@ -172,6 +173,11 @@ h1 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.default-span {
+  color: #b4c4e4;
+  font-family: "DM Serif Display", serif;
 }
 
 .dm-serif-display-regular-italic {
